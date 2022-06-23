@@ -1,7 +1,9 @@
-/* HEADER */
 body {
-    margin: 0px;
+    margin: auto;
+    width: 1600px;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -11,7 +13,10 @@ header {
 }
 
 header div.nav-menu a {
-    margin: 24px 93px 24px 215px;
+    padding-top: 24px;
+    padding-left: 215px;
+    padding-right: 94px;
+
     display: block;
     color: #000;
     font-family: 'Raleway';
@@ -28,11 +33,12 @@ header div.nav-menu a span {
 }
 
 header nav ul {
+    padding-left: 0px;
     margin-top: 32px;
 }
 
 header nav ul li {
-    display: inline-block;
+    display: inline;
     padding-right: 50px;
 }
 
@@ -48,15 +54,14 @@ header nav ul li a {
 }
 
 header div.contacts ul {
-    margin-left: 331px;
-    margin-right: 215px;
+    padding-left: 0px;
     margin-top: 32px;
+    margin-left: 331px;
 }
 
 header div.contacts ul li {
     display: inline-block;
-    padding-left: 50px;
-
+    padding-right: 50px;
 }
 
 header div.contacts ul li a {
@@ -126,14 +131,19 @@ section.main-screen button {
 
 section.competension {
     text-align: left;
-    margin-left: 215px;
+}
+
+section.competension ul {
+    padding-left: 0px;
     margin-top: 94px;
-    margin-bottom: 94px;
+    margin-left: 215px;
+
 }
 
 section.competension ul li {
     display: inline-block;
-    margin-right: 150px;
+    padding-right: 30px;
+
 }
 
 section.competension ul li h3 {
@@ -155,4 +165,134 @@ section.competension ul li p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+}
+
+/* END COMPETENSION BLOCK*/
+
+/* ABOUT BUSINESS (INDEX) */
+
+h2.main-title {
+    color: #212121;
+    padding-top: 94px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+section.about ul {
+    padding-left: 215px;
+    margin-bottom: 94px;
+}
+
+section.about ul li {
+    display: inline-flex;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+
+/* END ABOUT BUSINESS */
+
+/* TEAM BLOCK (INDEX) */
+section.team {
+    background-color: #F5F4FA;
+}
+
+section.team ul {
+    padding-left: 0px;
+    margin-left: 215px;
+    margin-bottom: 0px;
+}
+
+section.team ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 30px;
+    background-color: #fff;
+    margin-bottom: 94px;
+}
+
+section.team ul li h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+section.team ul li p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #2F303A;
+    height: 252px;
+}
+
+footer p.f-logotype {
+    padding-top: 60px;
+    margin: 0;
+}
+
+footer p.f-logotype a.f-logo {
+    margin-left: 215px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+}
+
+footer a.f-logo span {
+    color: #2196F3;
+}
+
+footer address p {
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 215px;
+    margin-bottom: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+address ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 9px;
+}
+
+address ul li.f-contacts a {
+    margin-left: 215px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
