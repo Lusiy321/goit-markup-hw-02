@@ -1,6 +1,20 @@
+:root {
+    --main-bg-color: #ffff;
+    --main-text-color: #212121;
+    --main-hover-color: #2196F3;
+    --contacts-color: #757575;
+    --second-bg-color: #F5F4FA;
+    --border-line-header: #ECECEC;
+    --content-bg-color: #2F303A;
+    --border-block-color: #EEEEEE;
+}
+
 body {
     margin: auto;
     width: 1600px;
+    font-family: 'Roboto', 'Raleway', 'Arial', sans-serif;
+    border: 1px solid var(--border-block-color);
+    color: var(--main-text-color);
 }
 
 /* HEADER */
@@ -8,28 +22,26 @@ body {
 header {
     display: flex;
     height: 80px;
-    border-bottom: 2px solid #ECECEC;
+    border-bottom: 2px solid var(--border-line-header);
 
 }
 
-header div.nav-menu a {
+header div.logo a {
     padding-top: 24px;
     padding-left: 215px;
     padding-right: 94px;
-
     display: block;
-    color: #000;
-    font-family: 'Raleway';
-    font-style: normal;
+    color: var(--main-text-color);
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.1;
     text-decoration: none;
 
 }
 
-header div.nav-menu a span {
-    color: #2196F3;
+header div.logo a span {
+    color: var(--main-hover-color);
 }
 
 header nav ul {
@@ -43,12 +55,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
+    color: var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -65,22 +75,20 @@ header div.contacts ul li {
 }
 
 header div.contacts ul li a {
-    color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
+    color: var(--contacts-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
 header div.contacts ul li a:hover {
-    color: #2196F3;
+    color: var(--main-hover-color);
 }
 
 header li a:hover {
-    color: #2196F3;
+    color: var(--main-hover-color);
 }
 
 /* END HEADER */
@@ -92,36 +100,46 @@ header li a:hover {
 section.main-screen {
     height: 600px;
     margin-top: -37px;
-    background-color: #2F303A;
+    background-color: var(--content-bg-color);
     align-items: center;
     text-align: center;
 }
 
 section.main-screen h1 {
-    color: #ffff;
+    color: var(--main-bg-color);
     padding-top: 200px;
     padding-left: 452px;
     padding-right: 452px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.2;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 section.main-screen button {
-    color: #ffff;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
+    color: var(--main-bg-color);
+    font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    background: #2196F3;
+    line-height: 2;
+    background: var(--main-hover-color);
     border-radius: 4px;
     padding: 10px 32px;
-    border: 1px solid #2196F3;
+    cursor: pointer;
+    border: 1px solid var(--main-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+section.main-screen button:hover {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    background: var(--second-bg-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid var(--second-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* END MAIN INFORMATION*/
@@ -147,9 +165,6 @@ section.competension ul li {
 }
 
 section.competension ul li h3 {
-    color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -158,12 +173,9 @@ section.competension ul li h3 {
 }
 
 section.competension ul li p {
-    color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    color: var(--contacts-color);
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.8;
     letter-spacing: 0.03em;
 }
 
@@ -172,13 +184,10 @@ section.competension ul li p {
 /* ABOUT BUSINESS (INDEX) */
 
 h2.main-title {
-    color: #212121;
     padding-top: 94px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -200,7 +209,7 @@ section.about ul li {
 
 /* TEAM BLOCK (INDEX) */
 section.team {
-    background-color: #F5F4FA;
+    background-color: var(--second-bg-color);
 }
 
 section.team ul {
@@ -213,31 +222,27 @@ section.team ul li {
     display: inline-block;
     list-style-type: none;
     margin-right: 30px;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     margin-bottom: 94px;
 }
 
 section.team ul li h3 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
 }
 
 section.team ul li p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contacts-color);
 }
+
+/* END TEAM BLOCK */
 
 /*  List navigation (Portfolio) */
 main ul.nav-button {
@@ -254,30 +259,28 @@ main ul.nav-button li {
 
 
 main ul.nav-button li button {
-    color: #000;
+    color: var(--main-text-color);
     margin-right: 8px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 30px;
-    background: #F5F4FA;
+    line-height: 2;
+    background: var(--second-bg-color);
     border-radius: 4px;
     padding: 6px 22px;
-    border: 1px solid #F5F4FA;
+    cursor: pointer;
+    border: 1px solid var(--second-bg-color);
 }
 
 main ul.nav-button li button:hover {
-    color: #ffff;
-    font-family: 'Roboto';
-    font-style: normal;
+    color: var(--main-bg-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 30px;
-    background: #2196F3;
+    line-height: 2;
+    background: var(--main-hover-color);
     border-radius: 4px;
     padding: 6px 22px;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--main-hover-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -297,28 +300,22 @@ main ul.prodjects li {
     list-style-type: none;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--border-block-color);
 }
 
 main ul.prodjects li h3 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
     margin-left: 24px;
 }
 
 main ul.prodjects li p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 2;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--contacts-color);
     margin-left: 24px;
 }
 
@@ -327,8 +324,9 @@ main ul.prodjects li p {
 /* FOOTER */
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--content-bg-color);
     height: 252px;
+    border: 1px solid var(--border-block-color);
 }
 
 footer p.f-logotype {
@@ -338,48 +336,49 @@ footer p.f-logotype {
 
 footer p.f-logotype a.f-logo {
     margin-left: 215px;
-    color: #fff;
-    font-family: 'Raleway';
-    font-style: normal;
+    color: var(--main-bg-color);
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     text-decoration: none;
 }
 
 footer a.f-logo span {
-    color: #2196F3;
+    color: var(--main-hover-color);
+}
+
+footer address {
+    font-style: normal;
 }
 
 footer address p {
-    color: #fff;
+    color: var(--main-bg-color);
     margin-top: 20px;
     margin-left: 215px;
     margin-bottom: 0px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
 }
 
-address ul {
+footer address ul {
     list-style-type: none;
     padding: 0;
     margin-top: 9px;
 }
 
-address ul li.f-contacts a {
+footer address ul li.f-contacts a {
     margin-left: 215px;
     text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+footer address ul li.f-contacts a:hover {
+    color: var(--main-hover-color);
 }
 
 /* END FOOTER */
