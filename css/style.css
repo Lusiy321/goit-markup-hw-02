@@ -12,7 +12,7 @@
 body {
     margin: auto;
     width: 1600px;
-    font-family: 'Roboto', 'Raleway', 'Arial', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     border: 1px solid var(--border-block-color);
     color: var(--main-text-color);
 }
@@ -83,12 +83,16 @@ header div.contacts ul li a {
     text-decoration: none;
 }
 
+header li a:hover {
+    color: var(--main-hover-color);
+}
+
 header div.contacts ul li a:hover {
     color: var(--main-hover-color);
 }
 
-header li a:hover {
-    color: var(--main-hover-color);
+header div.contacts ul li a:focus {
+    color: var(--content-bg-color);
 }
 
 /* END HEADER */
@@ -379,6 +383,10 @@ footer address ul li.f-contacts a {
 
 footer address ul li.f-contacts a:hover {
     color: var(--main-hover-color);
+}
+
+footer address ul li.f-contacts a:focus {
+    color: var(--second-bg-color);
 }
 
 /* END FOOTER */
