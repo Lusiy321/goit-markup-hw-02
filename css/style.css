@@ -35,7 +35,7 @@ header div.logo a {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.1;
+    line-height: 1.19;
     text-decoration: none;
 
 }
@@ -58,7 +58,7 @@ header nav ul li a {
     color: var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -78,7 +78,7 @@ header div.contacts ul li a {
     color: var(--contacts-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -116,7 +116,7 @@ section.main-screen h1 {
     padding-right: 452px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.2;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -125,7 +125,7 @@ section.main-screen button {
     color: var(--main-bg-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.87;
     background: var(--main-hover-color);
     border-radius: 4px;
     padding: 10px 32px;
@@ -138,7 +138,7 @@ section.main-screen button:hover {
     color: var(--main-text-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.87;
     background: var(--second-bg-color);
     border-radius: 4px;
     padding: 10px 32px;
@@ -171,7 +171,7 @@ section.competension ul li {
 section.competension ul li h3 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -179,7 +179,7 @@ section.competension ul li h3 {
 section.competension ul li p {
     color: var(--contacts-color);
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -191,7 +191,7 @@ h2.main-title {
     padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
@@ -233,14 +233,14 @@ section.team ul li {
 section.team ul li h3 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 section.team ul li p {
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--contacts-color);
@@ -249,26 +249,26 @@ section.team ul li p {
 /* END TEAM BLOCK */
 
 /*  List navigation (Portfolio) */
-main ul.nav-button {
+section ul.nav-button {
     text-align: center;
     margin-top: 94px;
     margin-bottom: 50px;
     padding-left: 0px;
 }
 
-main ul.nav-button li {
+section ul.nav-button li {
     display: inline;
     list-style-type: none;
 }
 
 
-main ul.nav-button li button {
+section ul.nav-button li button {
     color: var(--main-text-color);
     margin-right: 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.62;
     background: var(--second-bg-color);
     border-radius: 4px;
     padding: 6px 22px;
@@ -276,11 +276,11 @@ main ul.nav-button li button {
     border: 1px solid var(--second-bg-color);
 }
 
-main ul.nav-button li button:hover {
+section ul.nav-button li button:hover {
     color: var(--main-bg-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.62;
     background: var(--main-hover-color);
     border-radius: 4px;
     padding: 6px 22px;
@@ -292,14 +292,14 @@ main ul.nav-button li button:hover {
 
 /* MAIN CONTENT (Portfolio) */
 
-main ul.prodjects {
+section ul.prodjects {
     padding: 0px;
     margin-top: 0px;
     margin-left: 215px;
     margin-bottom: 94px;
 }
 
-main ul.prodjects li {
+section ul.prodjects li {
     display: inline-block;
     list-style-type: none;
     margin-right: 30px;
@@ -307,7 +307,7 @@ main ul.prodjects li {
     border: 1px solid var(--border-block-color);
 }
 
-main ul.prodjects li h3 {
+section ul.prodjects li h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -315,9 +315,9 @@ main ul.prodjects li h3 {
     margin-left: 24px;
 }
 
-main ul.prodjects li p {
+section ul.prodjects li p {
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--contacts-color);
     margin-left: 24px;
@@ -362,7 +362,7 @@ footer address p {
     margin-left: 215px;
     margin-bottom: 0px;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -376,7 +376,7 @@ footer address ul li.f-contacts a {
     margin-left: 215px;
     text-decoration: none;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
