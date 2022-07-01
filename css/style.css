@@ -17,20 +17,35 @@ body {
     color: var(--main-text-color);
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.container {
+    width: 1200px;
+    margin-left: 215px;
+    margin-bottom: 94px;
+}
+
 /* HEADER */
 
 header {
     display: flex;
-    height: 80px;
     border-bottom: 2px solid var(--border-line-header);
 
 }
 
 header div.logo a {
     display: block;
+    margin-left: 215px;
     padding-top: 24px;
-    padding-left: 215px;
-    padding-right: 94px;
+    padding-bottom: 24px;
+    margin-right: 93px;
     color: var(--main-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -44,14 +59,12 @@ header div.logo a span {
     color: var(--main-hover-color);
 }
 
-header nav ul {
-    padding-left: 0px;
+header ul {
     margin-top: 32px;
 }
 
-header nav ul li {
-    display: inline;
-    padding-right: 50px;
+header ul li {
+    margin-right: 50px;
 }
 
 header nav ul li a {
@@ -64,14 +77,7 @@ header nav ul li a {
 }
 
 header div.contacts ul {
-    padding-left: 0px;
-    margin-top: 32px;
-    margin-left: 331px;
-}
-
-header div.contacts ul li {
-    display: inline;
-    padding-right: 50px;
+    margin-left: 250px;
 }
 
 header div.contacts ul li a {
@@ -151,21 +157,9 @@ section.main-screen button:hover {
 
 /* COMPETENSION BLOCK (INDEX)*/
 
-section.competension {
-    text-align: left;
-}
-
-section.competension ul {
-    padding-left: 0px;
-    margin-top: 94px;
-    margin-left: 215px;
-
-}
-
 section.competension ul li {
-    display: inline-block;
-    padding-right: 30px;
-
+    width: 270px;
+    margin-top: 94px;
 }
 
 section.competension ul li h3 {
@@ -187,8 +181,7 @@ section.competension ul li p {
 
 /* ABOUT BUSINESS (INDEX) */
 
-h2.main-title {
-    padding-top: 94px;
+h2.main-title-1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -197,23 +190,21 @@ h2.main-title {
     margin-bottom: 50px;
 }
 
-section.about ul {
-    padding-left: 215px;
-    margin-bottom: 94px;
-}
-
-section.about ul li {
-    display: inline;
-    list-style-type: none;
-    padding-right: 30px;
-}
-
-
 /* END ABOUT BUSINESS */
 
 /* TEAM BLOCK (INDEX) */
 section.team {
     background-color: var(--second-bg-color);
+}
+
+h2.main-title-2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
 section.team ul {
@@ -223,7 +214,6 @@ section.team ul {
 }
 
 section.team ul li {
-    display: inline-block;
     list-style-type: none;
     margin-right: 30px;
     background-color: var(--main-bg-color);
@@ -333,13 +323,16 @@ footer {
     border: 1px solid var(--border-block-color);
 }
 
+footer p {
+    display: block;
+    margin-left: 215px;
+}
+
 footer p.f-logotype {
-    padding-top: 60px;
-    margin: 0;
+    margin-top: 60px;
 }
 
 footer p.f-logotype a.f-logo {
-    margin-left: 215px;
     color: var(--main-bg-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -356,24 +349,21 @@ footer address {
     font-style: normal;
 }
 
-footer address p {
+footer address p.address {
     color: var(--main-bg-color);
     margin-top: 20px;
-    margin-left: 215px;
-    margin-bottom: 0px;
+    margin-bottom: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-footer address ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 9px;
+footer address p.f-contacts {
+    margin-top: 0px;
+    margin-bottom: 9px;
 }
 
-footer address ul li.f-contacts a {
-    margin-left: 215px;
+footer address p.f-contacts a {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
@@ -381,11 +371,11 @@ footer address ul li.f-contacts a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-footer address ul li.f-contacts a:hover {
+footer address p.f-contacts a:hover {
     color: var(--main-hover-color);
 }
 
-footer address ul li.f-contacts a:focus {
+footer address p.f-contacts a:focus {
     color: var(--second-bg-color);
 }
 
